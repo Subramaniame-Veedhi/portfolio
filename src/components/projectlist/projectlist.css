@@ -1,0 +1,81 @@
+.pl {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.pl-bg{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      #000000,
+      #150050,
+      #3F0071,
+      #000000
+    ); ;
+  position: absolute;
+  z-index: -1
+}
+
+.pl-texts {
+  width: 65%;
+  margin: 0px 0px;
+}
+
+.pl-title {
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  margin: 40px , 0;
+  font-weight: 600;
+  color:#ffffff ;
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+    background-size: 0% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.pl-title:hover{
+  background-size: 0 3px, 100% 3px;
+}
+
+.pl-desc {
+  margin: 60px 0px;
+  color:#ffffff;
+}
+
+.pl-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .pl {
+    padding: 10px;
+  }
+
+  .pl-texts {
+    width: 100%;
+  }
+
+  .pl-desc {
+    display: none;
+  }
+}
